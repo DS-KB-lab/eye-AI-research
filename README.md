@@ -1,22 +1,24 @@
-# Eye AI Research
+# Ophthalmic AI Paper Hub
 
-A static GitHub Pages site for tracking ophthalmic AI research across:
+A static GitHub Pages website for sharing and organizing ophthalmic AI papers.
+
+## Focus areas
 
 - Ophthalmic foundation models
 - Visual grounding & region-text alignment
 - Parameter-efficient fine-tuning (PEFT)
 - Hyperbolic methods
 
-## Structure
+## Site structure
 
 - `index.html` — homepage
-- `papers/index.html` — searchable paper index
-- `topics/*.html` — topic landing pages
-- `updates/index.html` — automation-ready update log
-- `data/papers.json` — seed dataset
-- `assets/css/style.css` — site styling
+- `papers/index.html` — searchable paper list
+- `topics/*.html` — topic pages
+- `updates/index.html` — update log / automation-ready page
+- `data/papers.json` — curated seed dataset
+- `assets/css/style.css` — styling
 - `assets/js/site.js` — theme toggle + client-side rendering/filtering
-- `assets/images/*.svg` — logo and placeholders
+- `assets/images/*.svg` — logo and placeholder figures
 
 ## Local preview
 
@@ -26,19 +28,16 @@ python3 -m http.server 8080
 
 Then open <http://localhost:8080>.
 
-## Publish to GitHub Pages
+## GitHub Pages
 
-1. Push to the repository default branch.
-2. Enable GitHub Pages from the repository settings.
-3. Set source to **Deploy from a branch**.
-4. Choose the default branch and **/(root)**.
+This repository is designed to deploy directly from the repository root on the default branch.
 
-## Current status
+## Editorial direction
 
-This is a first public version with a deliberately small seed dataset. The next priorities are:
+This is a paper-sharing site, not a project homepage. The priority is:
 
-1. Add more verified ophthalmic foundation model papers.
-2. Expand visual grounding entries using a broader region-text alignment lens.
-3. Add PEFT papers under LoRA / adapters / prompt tuning terminology.
-4. Add hyperbolic papers, starting with transferable methods and any direct ophthalmic hits.
-5. Replace placeholder figures with paper-native model diagrams or clean redraws.
+1. useful paper selection,
+2. concise summaries,
+3. original links,
+4. clean topic structure,
+5. model figures over time.
