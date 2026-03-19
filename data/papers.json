@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-03-19T22:06:48Z",
+    "generated_at": "2026-03-19T22:40:00Z",
     "site_title": "Ophthalmic AI Paper Hub",
     "description": "A strict venue-first paper-sharing hub for ophthalmic AI across foundation models, visual grounding, PEFT, and hyperbolic methods.",
     "topics": [
@@ -340,6 +340,78 @@
       "doi": "",
       "code_url": "",
       "notes": "General-method NeurIPS paper retained under the hyperbolic exception. Public figure currently uses a rendered paper page containing the architecture/overview figure."
+    },
+    {
+      "id": "eyeclip-2025",
+      "title": "A multimodal visual-language foundation model for computational ophthalmology",
+      "short_title": "EyeCLIP",
+      "venue": "npj Digital Medicine",
+      "venue_type": "journal",
+      "year": 2025,
+      "priority": "A",
+      "highlight": "supplemental-journal",
+      "topics": [
+        "foundation-models",
+        "visual-grounding"
+      ],
+      "link": "https://www.nature.com/articles/s41746-025-01772-2",
+      "summary": "EyeCLIP is a multimodal visual-language foundation model for ophthalmology that combines self-supervised reconstruction, multimodal image alignment, and image-text contrastive learning at scale.",
+      "model_figure_url_or_path": "assets/figures/eyeclip-2025.jpeg",
+      "modality": [
+        "fundus",
+        "oct",
+        "multimodal"
+      ],
+      "task_tags": [
+        "vision-language-model",
+        "alignment",
+        "retrieval",
+        "vqa"
+      ],
+      "disease_tags": [
+        "DR",
+        "AMD",
+        "glaucoma",
+        "multi-disease"
+      ],
+      "doi": "",
+      "code_url": "",
+      "notes": "Supplemental exception retained by curator decision. npj Digital Medicine is the only non-whitelist journal preserved in the public set."
+    },
+    {
+      "id": "mirage-2025",
+      "title": "Multimodal foundation model and benchmark for comprehensive retinal OCT image analysis",
+      "short_title": "MIRAGE",
+      "venue": "npj Digital Medicine",
+      "venue_type": "journal",
+      "year": 2025,
+      "priority": "A",
+      "highlight": "supplemental-journal",
+      "topics": [
+        "foundation-models"
+      ],
+      "link": "https://www.nature.com/articles/s41746-025-01852-3",
+      "summary": "MIRAGE focuses on multimodal OCT and SLO retinal analysis, combining a foundation model with a benchmark-oriented framing for comprehensive retinal OCT tasks.",
+      "model_figure_url_or_path": "assets/figures/mirage-2025.jpeg",
+      "modality": [
+        "oct",
+        "multimodal"
+      ],
+      "task_tags": [
+        "multimodal-learning",
+        "benchmarking",
+        "segmentation",
+        "classification"
+      ],
+      "disease_tags": [
+        "AMD",
+        "DR",
+        "glaucoma",
+        "multi-disease"
+      ],
+      "doi": "",
+      "code_url": "",
+      "notes": "Supplemental exception retained by curator decision. npj Digital Medicine is the only non-whitelist journal preserved in the public set."
     }
   ]
 }

@@ -21,6 +21,7 @@ Automatically discover, review, and enrich new ophthalmic AI papers.
 - Hyperbolic topic may include general-method papers from allowed CS venues (CVPR/ICCV/ECCV, ICLR/NeurIPS/ICML/AAAI, TPAMI/IJCV/TIP, etc.).
 - Source links prioritize official venue pages (CVF/IEEE/Elsevier/Nature/OpenReview), DOIs, or PubMed. Avoid relying solely on preprints when an archival venue exists.
 - Keep PDFs, extracted text, raw figure candidates, and `data/paper-artifacts.json` local; only curated figures promoted into `assets/figures/` should become public.
+- The public dataset may keep `npj Digital Medicine` only as an explicit supplemental journal exception; other non-whitelist sources should not remain public.
 
 ## Target search sources
 - Nature / Nature family
