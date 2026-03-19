@@ -1,2 +1,6 @@
 .local-backup/
 .DS_Store
+.venv/
+library/pdfs/
+library/text/
+data/paper-artifacts.json

@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "updated_at": "2026-03-19T21:40:00Z",
+  "papers": [
+    {
+      "id": "retfound-2023",
+      "page_url": "https://pubmed.ncbi.nlm.nih.gov/37704728/",
+      "pdf_url": "",
+      "source_type": "pubmed"
+    },
+    {
+      "id": "visionfm-2024",
+      "page_url": "https://ai.nejm.org/doi/full/10.1056/AIoa2300221",
+      "pdf_url": "",
+      "source_type": "journal"
+    },
+    {
+      "id": "eyefound-2024",
+      "page_url": "https://arxiv.org/abs/2405.11338",
+      "pdf_url": "https://arxiv.org/pdf/2405.11338.pdf",
+      "source_type": "arxiv"
+    },
+    {
+      "id": "urfound-2024",
+      "page_url": "https://arxiv.org/abs/2408.05618",
+      "pdf_url": "https://arxiv.org/pdf/2408.05618.pdf",
+      "source_type": "arxiv"
+    },
+    {
+      "id": "eyeclip-2025",
+      "page_url": "https://www.nature.com/articles/s41746-025-01772-2",
+      "pdf_url": "",
+      "source_type": "journal"
+    },
+    {
+      "id": "mirage-2025",
+      "page_url": "https://www.nature.com/articles/s41746-025-01852-3",
+      "pdf_url": "",
+      "source_type": "journal"
+    },
+    {
+      "id": "retinalgpt-2025",
+      "page_url": "https://arxiv.org/abs/2503.03987",
+      "pdf_url": "https://arxiv.org/pdf/2503.03987.pdf",
+      "source_type": "arxiv"
+    },
+    {
+      "id": "fmue-2024",
+      "page_url": "https://arxiv.org/abs/2406.16942",
+      "pdf_url": "https://arxiv.org/pdf/2406.16942.pdf",
+      "source_type": "arxiv"
+    },
+    {
+      "id": "sam-octa-2023",
+      "page_url": "https://arxiv.org/abs/2309.11758",
+      "pdf_url": "https://arxiv.org/pdf/2309.11758.pdf",
+      "source_type": "arxiv"
+    }
+  ]
+}

@@ -5,10 +5,22 @@
     "site_title": "Ophthalmic AI Paper Hub",
     "description": "A living paper-sharing hub for ophthalmic AI across foundation models, visual grounding, PEFT, and hyperbolic methods.",
     "topics": [
-      { "id": "foundation-models", "label": "Ophthalmic Foundation Models" },
-      { "id": "visual-grounding", "label": "Visual Grounding & Region-Text Alignment" },
-      { "id": "peft", "label": "Parameter-Efficient Fine-Tuning" },
-      { "id": "hyperbolic", "label": "Hyperbolic Methods" }
+      {
+        "id": "foundation-models",
+        "label": "Ophthalmic Foundation Models"
+      },
+      {
+        "id": "visual-grounding",
+        "label": "Visual Grounding & Region-Text Alignment"
+      },
+      {
+        "id": "peft",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "hyperbolic",
+        "label": "Hyperbolic Methods"
+      }
     ]
   },
   "papers": [
@@ -21,13 +33,26 @@
       "year": 2023,
       "priority": "S",
       "highlight": "journal",
-      "topics": ["foundation-models"],
+      "topics": [
+        "foundation-models"
+      ],
       "link": "https://pubmed.ncbi.nlm.nih.gov/37704728/",
       "summary": "RETFound is the anchor ophthalmic foundation model paper of the last five years, emphasizing large-scale pretraining for transfer across retinal tasks.",
       "model_figure_url_or_path": "assets/images/placeholder-model.svg",
-      "modality": ["fundus", "oct"],
-      "task_tags": ["classification", "transfer-learning", "representation-learning"],
-      "disease_tags": ["DR", "AMD", "glaucoma"],
+      "modality": [
+        "fundus",
+        "oct"
+      ],
+      "task_tags": [
+        "classification",
+        "transfer-learning",
+        "representation-learning"
+      ],
+      "disease_tags": [
+        "DR",
+        "AMD",
+        "glaucoma"
+      ],
       "doi": "10.1038/s41586-023-06555-x",
       "code_url": "",
       "notes": "Official paper link confirmed. Figure placeholder should be replaced with the model overview from the paper or a redrawn schematic."
@@ -41,13 +66,28 @@
       "year": 2024,
       "priority": "S",
       "highlight": "journal",
-      "topics": ["foundation-models"],
+      "topics": [
+        "foundation-models"
+      ],
       "link": "https://ai.nejm.org/doi/full/10.1056/AIoa2300221",
       "summary": "VisionFM frames ophthalmic AI as a multimodal, multitask foundation model problem and is one of the strongest generalist references in the field.",
       "model_figure_url_or_path": "assets/images/placeholder-model.svg",
-      "modality": ["fundus", "oct", "multimodal"],
-      "task_tags": ["multitask-learning", "multimodal-learning", "generalist-ai"],
-      "disease_tags": ["DR", "AMD", "glaucoma", "multi-disease"],
+      "modality": [
+        "fundus",
+        "oct",
+        "multimodal"
+      ],
+      "task_tags": [
+        "multitask-learning",
+        "multimodal-learning",
+        "generalist-ai"
+      ],
+      "disease_tags": [
+        "DR",
+        "AMD",
+        "glaucoma",
+        "multi-disease"
+      ],
       "doi": "10.1056/AIoa2300221",
       "code_url": "",
       "notes": "High-value source even though NEJM AI is outside the initial venue list."
@@ -61,13 +101,28 @@
       "year": 2024,
       "priority": "A",
       "highlight": "none",
-      "topics": ["foundation-models", "visual-grounding", "peft"],
+      "topics": [
+        "foundation-models",
+        "visual-grounding",
+        "peft"
+      ],
       "link": "https://arxiv.org/abs/2405.11338",
       "summary": "EyeFound is a multimodal generalist foundation model for ophthalmic imaging, designed to learn transferable representations from unlabeled multimodal retinal data.",
       "model_figure_url_or_path": "assets/images/placeholder-model.svg",
-      "modality": ["fundus", "oct", "multimodal"],
-      "task_tags": ["multimodal-learning", "retrieval", "alignment", "adaptation"],
-      "disease_tags": ["multi-disease"],
+      "modality": [
+        "fundus",
+        "oct",
+        "multimodal"
+      ],
+      "task_tags": [
+        "multimodal-learning",
+        "retrieval",
+        "alignment",
+        "adaptation"
+      ],
+      "disease_tags": [
+        "multi-disease"
+      ],
       "doi": "",
       "code_url": "",
       "notes": "Track final publication venue and replace placeholder metadata once confirmed. The paper explicitly uses LoRA during fine-tuning experiments."
@@ -81,13 +136,26 @@
       "year": 2024,
       "priority": "A",
       "highlight": "none",
-      "topics": ["foundation-models", "peft"],
+      "topics": [
+        "foundation-models",
+        "peft"
+      ],
       "link": "https://arxiv.org/abs/2408.05618",
       "summary": "UrFound pushes toward a universal retinal foundation model with knowledge-guided masked modeling and acts as a bridge between pretraining and downstream adaptation.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
-      "modality": ["fundus", "oct", "multimodal"],
-      "task_tags": ["masked-modeling", "transfer-learning", "adaptation"],
-      "disease_tags": ["multi-disease"],
+      "model_figure_url_or_path": "assets/figures/urfound-2024.png",
+      "modality": [
+        "fundus",
+        "oct",
+        "multimodal"
+      ],
+      "task_tags": [
+        "masked-modeling",
+        "transfer-learning",
+        "adaptation"
+      ],
+      "disease_tags": [
+        "multi-disease"
+      ],
       "doi": "",
       "code_url": "",
       "notes": "Final venue should be verified before citing as archival publication."
@@ -101,13 +169,30 @@
       "year": 2025,
       "priority": "S",
       "highlight": "journal",
-      "topics": ["foundation-models", "visual-grounding"],
+      "topics": [
+        "foundation-models",
+        "visual-grounding"
+      ],
       "link": "https://www.nature.com/articles/s41746-025-01772-2",
       "summary": "EyeCLIP is a visual-language foundation model for ophthalmology that combines self-supervised reconstruction, multimodal image alignment, and image-text contrastive learning at large scale.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
-      "modality": ["fundus", "oct", "multimodal"],
-      "task_tags": ["vision-language-model", "alignment", "retrieval", "vqa"],
-      "disease_tags": ["DR", "AMD", "glaucoma", "multi-disease"],
+      "model_figure_url_or_path": "assets/figures/eyeclip-2025.jpeg",
+      "modality": [
+        "fundus",
+        "oct",
+        "multimodal"
+      ],
+      "task_tags": [
+        "vision-language-model",
+        "alignment",
+        "retrieval",
+        "vqa"
+      ],
+      "disease_tags": [
+        "DR",
+        "AMD",
+        "glaucoma",
+        "multi-disease"
+      ],
       "doi": "",
       "code_url": "",
       "notes": "The article describes training on 2,777,593 multimodal ophthalmic images and image-text alignment; high-value entry for both foundation-model and grounding tracks."
@@ -121,13 +206,28 @@
       "year": 2025,
       "priority": "A",
       "highlight": "journal",
-      "topics": ["foundation-models"],
+      "topics": [
+        "foundation-models"
+      ],
       "link": "https://www.nature.com/articles/s41746-025-01852-3",
       "summary": "MIRAGE focuses on multimodal OCT and SLO retinal analysis, combining a foundation model with a benchmark-oriented framing for comprehensive retinal OCT tasks.",
-      "model_figure_url_or_path": "assets/images/placeholder-benchmark.svg",
-      "modality": ["oct", "multimodal"],
-      "task_tags": ["multimodal-learning", "benchmarking", "segmentation", "classification"],
-      "disease_tags": ["AMD", "DR", "glaucoma", "multi-disease"],
+      "model_figure_url_or_path": "assets/figures/mirage-2025.jpeg",
+      "modality": [
+        "oct",
+        "multimodal"
+      ],
+      "task_tags": [
+        "multimodal-learning",
+        "benchmarking",
+        "segmentation",
+        "classification"
+      ],
+      "disease_tags": [
+        "AMD",
+        "DR",
+        "glaucoma",
+        "multi-disease"
+      ],
       "doi": "",
       "code_url": "",
       "notes": "Useful because it combines both model and benchmark perspectives for retinal OCT analysis."
@@ -141,13 +241,25 @@
       "year": 2025,
       "priority": "A",
       "highlight": "none",
-      "topics": ["visual-grounding"],
+      "topics": [
+        "visual-grounding"
+      ],
       "link": "https://arxiv.org/abs/2503.03987",
       "summary": "RetinalGPT is a retinal vision-language assistant emphasizing clinically preferred quantitative analysis, diagnosis, and lesion localization, making it a practical grounding-adjacent entry.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
-      "modality": ["fundus", "multimodal"],
-      "task_tags": ["vision-language-model", "lesion-localization", "conversation", "diagnosis"],
-      "disease_tags": ["multi-disease"],
+      "model_figure_url_or_path": "assets/figures/retinalgpt-2025.png",
+      "modality": [
+        "fundus",
+        "multimodal"
+      ],
+      "task_tags": [
+        "vision-language-model",
+        "lesion-localization",
+        "conversation",
+        "diagnosis"
+      ],
+      "disease_tags": [
+        "multi-disease"
+      ],
       "doi": "10.48550/arXiv.2503.03987",
       "code_url": "",
       "notes": "Strong candidate for the visual grounding section because the paper explicitly reports lesion localization ability."
@@ -161,13 +273,23 @@
       "year": 2024,
       "priority": "A",
       "highlight": "none",
-      "topics": ["peft"],
+      "topics": [
+        "peft"
+      ],
       "link": "https://arxiv.org/abs/2406.16942",
       "summary": "FMUE adapts ophthalmic foundation-model ideas to OCT disease detection while adding uncertainty estimation to better handle open-set and low-confidence clinical cases.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
-      "modality": ["oct"],
-      "task_tags": ["classification", "uncertainty-estimation", "adaptation"],
-      "disease_tags": ["multi-disease"],
+      "model_figure_url_or_path": "assets/figures/fmue-2024.png",
+      "modality": [
+        "oct"
+      ],
+      "task_tags": [
+        "classification",
+        "uncertainty-estimation",
+        "adaptation"
+      ],
+      "disease_tags": [
+        "multi-disease"
+      ],
       "doi": "10.48550/arXiv.2406.16942",
       "code_url": "",
       "notes": "Not a pure PEFT paper, but highly relevant as an adaptation-oriented OCT foundation-model paper."
@@ -181,12 +303,20 @@
       "year": 2023,
       "priority": "A",
       "highlight": "none",
-      "topics": ["peft"],
+      "topics": [
+        "peft"
+      ],
       "link": "https://arxiv.org/abs/2309.11758",
       "summary": "SAM-OCTA applies LoRA-based adaptation to a foundation segmentation model for OCTA image segmentation, making it a clean, concrete PEFT entry for ophthalmic imaging.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
-      "modality": ["octa"],
-      "task_tags": ["segmentation", "lora", "fine-tuning"],
+      "model_figure_url_or_path": "assets/figures/sam-octa-2023.png",
+      "modality": [
+        "octa"
+      ],
+      "task_tags": [
+        "segmentation",
+        "lora",
+        "fine-tuning"
+      ],
       "disease_tags": [],
       "doi": "10.48550/arXiv.2309.11758",
       "code_url": "",
@@ -201,13 +331,26 @@
       "year": 2025,
       "priority": "A",
       "highlight": "none",
-      "topics": ["foundation-models"],
+      "topics": [
+        "foundation-models"
+      ],
       "link": "",
       "summary": "A benchmark-style slot reserved for comparing ophthalmic foundation models; useful as an overview node even before all metadata is finalized.",
       "model_figure_url_or_path": "assets/images/placeholder-benchmark.svg",
-      "modality": ["fundus", "oct"],
-      "task_tags": ["benchmarking", "evaluation"],
-      "disease_tags": ["DR", "AMD", "glaucoma", "multi-disease"],
+      "modality": [
+        "fundus",
+        "oct"
+      ],
+      "task_tags": [
+        "benchmarking",
+        "evaluation"
+      ],
+      "disease_tags": [
+        "DR",
+        "AMD",
+        "glaucoma",
+        "multi-disease"
+      ],
       "doi": "",
       "code_url": "",
       "notes": "Placeholder entry. Replace with final official source once benchmark metadata is confirmed."
