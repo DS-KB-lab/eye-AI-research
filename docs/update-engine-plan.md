@@ -20,6 +20,7 @@ Automatically discover, review, and enrich new ophthalmic AI papers.
 - For ophthalmic topics (foundation-models, visual-grounding, PEFT), prefer ophthalmic-focused works within those venues; when ophthalmic papers are sparse, allow closely related medical-imaging works from the same venue list and label them as such.
 - Hyperbolic topic may include general-method papers from allowed CS venues (CVPR/ICCV/ECCV, ICLR/NeurIPS/ICML/AAAI, TPAMI/IJCV/TIP, etc.).
 - Source links prioritize official venue pages (CVF/IEEE/Elsevier/Nature/OpenReview), DOIs, or PubMed. Avoid relying solely on preprints when an archival venue exists.
+- Keep PDFs, extracted text, raw figure candidates, and `data/paper-artifacts.json` local; only curated figures promoted into `assets/figures/` should become public.
 
 ## Target search sources
 - Nature / Nature family

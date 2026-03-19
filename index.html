@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ophthalmic AI Paper Hub</title>
-  <meta name="description" content="A living paper-sharing hub for ophthalmic AI: curated papers, concise summaries, original links, and model figures.">
+  <meta name="description" content="A strict venue-first paper-sharing hub for ophthalmic AI: official sources, concise summaries, and model-figure slots.">
   <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -23,44 +23,110 @@
   </div>
 </header>
 <main>
-  <div class="container hero">
-    <section class="hero-card">
-      <p class="small">Living paper collection · continuously updated</p>
-      <h1>A living hub for ophthalmic AI papers.</h1>
-      <p>This site is built for paper sharing, not project marketing. It collects important ophthalmic AI papers, adds concise summaries, preserves original links, and reserves space for core model figures so readers can scan fast and go deeper when needed.</p>
-      <div class="actions">
-        <a class="btn primary" href="papers/index.html">Browse papers</a>
-        <a class="btn" href="topics/foundation-models.html">Explore topics</a>
-      </div>
-      <p class="small">Last dataset refresh: <span data-last-updated>—</span></p>
-    </section>
-    <section class="hero-card">
-      <img src="assets/images/placeholder-model.svg" alt="Ophthalmic AI paper hub illustration">
+  <div class="container">
+    <section class="hero-shell">
+      <section class="hero-card hero-copy">
+        <div class="stack">
+          <p class="eyebrow">Strict venue-first paper collection</p>
+          <h1>Ophthalmic AI papers, curated like a reading room.</h1>
+          <p class="lead">This site stays paper-first. Public entries survive only if they match the approved venue list, keep an official source, and remain useful for fast scanning across foundation models, grounding, PEFT, and hyperbolic methods.</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="papers/index.html">Browse the catalog</a>
+          <a class="btn" href="topics/foundation-models.html">Open topic shelves</a>
+        </div>
+        <p class="small">Last dataset refresh: <span data-last-updated>—</span></p>
+      </section>
+
+      <aside class="hero-card hero-panel">
+        <div class="metric-grid">
+          <div class="metric">
+            <span data-paper-count>—</span>
+            <small>public papers</small>
+          </div>
+          <div class="metric">
+            <span data-venue-count>—</span>
+            <small>venues represented</small>
+          </div>
+          <div class="metric">
+            <span data-figure-count>—</span>
+            <small>public figures promoted</small>
+          </div>
+        </div>
+        <div class="stack">
+          <h2>How the public set stays high-signal</h2>
+          <div class="policy-points">
+            <p>Only papers from the shared whitelist remain public.</p>
+            <p>Foundation, grounding, and PEFT stay ophthalmic-first, with medically close exceptions only when the topic is sparse.</p>
+            <p>Hyperbolic papers may be general-method, but still only from approved venues.</p>
+          </div>
+        </div>
+      </aside>
     </section>
   </div>
 
   <div class="container section">
-    <h2>What this site focuses on</h2>
-    <div class="grid grid-2">
-      <div class="card"><div class="card-body"><h3>Ophthalmic foundation models</h3><p>The strongest current track for building a useful paper collection: landmark retinal and multimodal ophthalmic foundation model papers.</p></div></div>
-      <div class="card"><div class="card-body"><h3>Visual grounding & region-text alignment</h3><p>Papers on lesion localization, multimodal alignment, and related grounding-style ophthalmic or medically transferable work.</p></div></div>
-      <div class="card"><div class="card-body"><h3>Parameter-efficient fine-tuning</h3><p>LoRA, adapters, prompt tuning, efficient adaptation, and other practical ways to adapt large ophthalmic models with lower cost.</p></div></div>
-      <div class="card"><div class="card-body"><h3>Hyperbolic methods</h3><p>A smaller but interesting method-focused track, especially for hierarchy-aware disease representation and transferable modeling ideas.</p></div></div>
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Browse by track</p>
+        <h2>Topic shelves</h2>
+      </div>
+      <p class="small">Built for paper sharing, not for project marketing.</p>
+    </div>
+    <div class="grid topic-shelf">
+      <article class="topic-tile">
+        <div class="topic-stat"><strong data-topic-stat="foundation-models">0</strong> papers</div>
+        <div>
+          <h3>Ophthalmic foundation models</h3>
+          <p>Anchor ophthalmic papers on retinal pretraining, multimodal representation learning, and transferable evaluation.</p>
+        </div>
+        <a class="btn" href="topics/foundation-models.html">Explore foundation models</a>
+      </article>
+      <article class="topic-tile">
+        <div class="topic-stat"><strong data-topic-stat="visual-grounding">0</strong> papers</div>
+        <div>
+          <h3>Visual grounding</h3>
+          <p>Vision-language, lesion-localization, and medically close region-text work that still clears the venue whitelist.</p>
+        </div>
+        <a class="btn" href="topics/visual-grounding.html">Explore grounding</a>
+      </article>
+      <article class="topic-tile">
+        <div class="topic-stat"><strong data-topic-stat="peft">0</strong> papers</div>
+        <div>
+          <h3>Parameter-efficient fine-tuning</h3>
+          <p>Adapters, promptable transfer, and efficient adaptation references for ophthalmic or closely related medical imaging.</p>
+        </div>
+        <a class="btn" href="topics/peft.html">Explore PEFT</a>
+      </article>
+      <article class="topic-tile">
+        <div class="topic-stat"><strong data-topic-stat="hyperbolic">0</strong> papers</div>
+        <div>
+          <h3>Hyperbolic methods</h3>
+          <p>General-method papers that stay relevant for hierarchy-aware modeling and still come only from approved venues.</p>
+        </div>
+        <a class="btn" href="topics/hyperbolic.html">Explore hyperbolic papers</a>
+      </article>
     </div>
   </div>
 
   <div class="container section">
-    <h2>Featured papers</h2>
-    <p class="small">Each entry aims to include a short takeaway, the original paper link, and eventually a core model figure or a clean redraw.</p>
-    <div id="home-highlights" class="paper-grid js-data-error"></div>
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Featured shelf</p>
+        <h2>Fast-start papers</h2>
+      </div>
+      <a class="btn" href="papers/index.html">Open full catalog</a>
+    </div>
+    <p class="small">Featured cards aim to cover the main tracks rather than just repeat the top priority tier.</p>
+    <div id="home-highlights" class="paper-grid paper-grid-featured js-data-error"></div>
   </div>
 
-  <div class="container section notice">
-    This is a curated paper-sharing site. The current release is intentionally small and high-signal; future updates will expand the paper pool and replace placeholder figures with paper-native model diagrams.
+  <div class="container section note-panel">
+    Downloaded PDFs, extracted candidate figures, and raw text stay local in the pipeline. Only cleaned public figures promoted into <code>assets/figures/</code> should appear on the site.
   </div>
 </main>
 <footer>
-  <div class="container">Static GitHub Pages site for ophthalmic AI paper sharing and continuous curation.</div>
+  <div class="container">Static GitHub Pages site for strict venue-first ophthalmic AI paper sharing.</div>
 </footer>
 <script src="assets/js/site.js" defer></script>
 </body>

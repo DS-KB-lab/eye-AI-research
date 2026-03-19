@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-03-19T21:52:26Z",
+    "generated_at": "2026-03-19T22:06:48Z",
     "site_title": "Ophthalmic AI Paper Hub",
-    "description": "A living paper-sharing hub for ophthalmic AI across foundation models, visual grounding, PEFT, and hyperbolic methods.",
+    "description": "A strict venue-first paper-sharing hub for ophthalmic AI across foundation models, visual grounding, PEFT, and hyperbolic methods.",
     "topics": [
       {
         "id": "foundation-models",
@@ -36,9 +36,9 @@
       "topics": [
         "foundation-models"
       ],
-      "link": "https://pubmed.ncbi.nlm.nih.gov/37704728/",
+      "link": "https://www.nature.com/articles/s41586-023-06555-x",
       "summary": "RETFound is the anchor ophthalmic foundation model paper of the last five years, emphasizing large-scale pretraining for transfer across retinal tasks.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "model_figure_url_or_path": "assets/figures/retfound-2023-page1.png",
       "modality": [
         "fundus",
         "oct"
@@ -55,305 +55,7 @@
       ],
       "doi": "10.1038/s41586-023-06555-x",
       "code_url": "",
-      "notes": "Official paper link confirmed. Figure placeholder should be replaced with the model overview from the paper or a redrawn schematic."
-    },
-    {
-      "id": "visionfm-2024",
-      "title": "Development and Validation of a Multimodal Multitask Vision Foundation Model for Generalist Ophthalmic Artificial Intelligence",
-      "short_title": "VisionFM",
-      "venue": "NEJM AI",
-      "venue_type": "journal",
-      "year": 2024,
-      "priority": "S",
-      "highlight": "journal",
-      "topics": [
-        "foundation-models"
-      ],
-      "link": "https://ai.nejm.org/doi/full/10.1056/AIoa2300221",
-      "summary": "VisionFM frames ophthalmic AI as a multimodal, multitask foundation model problem and is one of the strongest generalist references in the field.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
-      "modality": [
-        "fundus",
-        "oct",
-        "multimodal"
-      ],
-      "task_tags": [
-        "multitask-learning",
-        "multimodal-learning",
-        "generalist-ai"
-      ],
-      "disease_tags": [
-        "DR",
-        "AMD",
-        "glaucoma",
-        "multi-disease"
-      ],
-      "doi": "10.1056/AIoa2300221",
-      "code_url": "",
-      "notes": "High-value source even though NEJM AI is outside the initial venue list."
-    },
-    {
-      "id": "eyefound-2024",
-      "title": "EyeFound: A Multimodal Generalist Foundation Model for Ophthalmic Imaging",
-      "short_title": "EyeFound",
-      "venue": "arXiv",
-      "venue_type": "preprint",
-      "year": 2024,
-      "priority": "A",
-      "highlight": "none",
-      "topics": [
-        "foundation-models",
-        "visual-grounding",
-        "peft"
-      ],
-      "link": "https://arxiv.org/abs/2405.11338",
-      "summary": "EyeFound is a multimodal generalist foundation model for ophthalmic imaging, designed to learn transferable representations from unlabeled multimodal retinal data.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
-      "modality": [
-        "fundus",
-        "oct",
-        "multimodal"
-      ],
-      "task_tags": [
-        "multimodal-learning",
-        "retrieval",
-        "alignment",
-        "adaptation"
-      ],
-      "disease_tags": [
-        "multi-disease"
-      ],
-      "doi": "",
-      "code_url": "",
-      "notes": "Track final publication venue and replace placeholder metadata once confirmed. The paper explicitly uses LoRA during fine-tuning experiments."
-    },
-    {
-      "id": "urfound-2024",
-      "title": "UrFound: Towards Universal Retinal Foundation Models via Knowledge-Guided Masked Modeling",
-      "short_title": "UrFound",
-      "venue": "arXiv",
-      "venue_type": "preprint",
-      "year": 2024,
-      "priority": "A",
-      "highlight": "none",
-      "topics": [
-        "foundation-models",
-        "peft"
-      ],
-      "link": "https://arxiv.org/abs/2408.05618",
-      "summary": "UrFound pushes toward a universal retinal foundation model with knowledge-guided masked modeling and acts as a bridge between pretraining and downstream adaptation.",
-      "model_figure_url_or_path": "assets/figures/urfound-2024.png",
-      "modality": [
-        "fundus",
-        "oct",
-        "multimodal"
-      ],
-      "task_tags": [
-        "masked-modeling",
-        "transfer-learning",
-        "adaptation"
-      ],
-      "disease_tags": [
-        "multi-disease"
-      ],
-      "doi": "",
-      "code_url": "",
-      "notes": "Final venue should be verified before citing as archival publication."
-    },
-    {
-      "id": "eyeclip-2025",
-      "title": "A multimodal visual-language foundation model for computational ophthalmology",
-      "short_title": "EyeCLIP",
-      "venue": "npj Digital Medicine",
-      "venue_type": "journal",
-      "year": 2025,
-      "priority": "S",
-      "highlight": "journal",
-      "topics": [
-        "foundation-models",
-        "visual-grounding"
-      ],
-      "link": "https://www.nature.com/articles/s41746-025-01772-2",
-      "summary": "EyeCLIP is a visual-language foundation model for ophthalmology that combines self-supervised reconstruction, multimodal image alignment, and image-text contrastive learning at large scale.",
-      "model_figure_url_or_path": "assets/figures/eyeclip-2025.jpeg",
-      "modality": [
-        "fundus",
-        "oct",
-        "multimodal"
-      ],
-      "task_tags": [
-        "vision-language-model",
-        "alignment",
-        "retrieval",
-        "vqa"
-      ],
-      "disease_tags": [
-        "DR",
-        "AMD",
-        "glaucoma",
-        "multi-disease"
-      ],
-      "doi": "",
-      "code_url": "",
-      "notes": "The article describes training on 2,777,593 multimodal ophthalmic images and image-text alignment; high-value entry for both foundation-model and grounding tracks."
-    },
-    {
-      "id": "mirage-2025",
-      "title": "Multimodal foundation model and benchmark for comprehensive retinal OCT image analysis",
-      "short_title": "MIRAGE",
-      "venue": "npj Digital Medicine",
-      "venue_type": "journal",
-      "year": 2025,
-      "priority": "A",
-      "highlight": "journal",
-      "topics": [
-        "foundation-models"
-      ],
-      "link": "https://www.nature.com/articles/s41746-025-01852-3",
-      "summary": "MIRAGE focuses on multimodal OCT and SLO retinal analysis, combining a foundation model with a benchmark-oriented framing for comprehensive retinal OCT tasks.",
-      "model_figure_url_or_path": "assets/figures/mirage-2025.jpeg",
-      "modality": [
-        "oct",
-        "multimodal"
-      ],
-      "task_tags": [
-        "multimodal-learning",
-        "benchmarking",
-        "segmentation",
-        "classification"
-      ],
-      "disease_tags": [
-        "AMD",
-        "DR",
-        "glaucoma",
-        "multi-disease"
-      ],
-      "doi": "",
-      "code_url": "",
-      "notes": "Useful because it combines both model and benchmark perspectives for retinal OCT analysis."
-    },
-    {
-      "id": "retinalgpt-2025",
-      "title": "A Retinal Clinical Preference Conversational Assistant Powered by Large Vision-Language Models",
-      "short_title": "RetinalGPT",
-      "venue": "arXiv",
-      "venue_type": "preprint",
-      "year": 2025,
-      "priority": "A",
-      "highlight": "none",
-      "topics": [
-        "visual-grounding"
-      ],
-      "link": "https://arxiv.org/abs/2503.03987",
-      "summary": "RetinalGPT is a retinal vision-language assistant emphasizing clinically preferred quantitative analysis, diagnosis, and lesion localization, making it a practical grounding-adjacent entry.",
-      "model_figure_url_or_path": "assets/figures/retinalgpt-2025.png",
-      "modality": [
-        "fundus",
-        "multimodal"
-      ],
-      "task_tags": [
-        "vision-language-model",
-        "lesion-localization",
-        "conversation",
-        "diagnosis"
-      ],
-      "disease_tags": [
-        "multi-disease"
-      ],
-      "doi": "10.48550/arXiv.2503.03987",
-      "code_url": "",
-      "notes": "Strong candidate for the visual grounding section because the paper explicitly reports lesion localization ability."
-    },
-    {
-      "id": "fmue-2024",
-      "title": "Enhancing Diagnostic Reliability of Foundation Model with Uncertainty Estimation in OCT Images",
-      "short_title": "FMUE",
-      "venue": "arXiv",
-      "venue_type": "preprint",
-      "year": 2024,
-      "priority": "A",
-      "highlight": "none",
-      "topics": [
-        "peft"
-      ],
-      "link": "https://arxiv.org/abs/2406.16942",
-      "summary": "FMUE adapts ophthalmic foundation-model ideas to OCT disease detection while adding uncertainty estimation to better handle open-set and low-confidence clinical cases.",
-      "model_figure_url_or_path": "assets/figures/fmue-2024.png",
-      "modality": [
-        "oct"
-      ],
-      "task_tags": [
-        "classification",
-        "uncertainty-estimation",
-        "adaptation"
-      ],
-      "disease_tags": [
-        "multi-disease"
-      ],
-      "doi": "10.48550/arXiv.2406.16942",
-      "code_url": "",
-      "notes": "Not a pure PEFT paper, but highly relevant as an adaptation-oriented OCT foundation-model paper."
-    },
-    {
-      "id": "sam-octa-2023",
-      "title": "A Fine-Tuning Strategy for Applying Foundation Model to OCTA Image Segmentation Tasks",
-      "short_title": "SAM-OCTA",
-      "venue": "arXiv",
-      "venue_type": "preprint",
-      "year": 2023,
-      "priority": "A",
-      "highlight": "none",
-      "topics": [
-        "peft"
-      ],
-      "link": "https://arxiv.org/abs/2309.11758",
-      "summary": "SAM-OCTA applies LoRA-based adaptation to a foundation segmentation model for OCTA image segmentation, making it a clean, concrete PEFT entry for ophthalmic imaging.",
-      "model_figure_url_or_path": "assets/figures/sam-octa-2023.png",
-      "modality": [
-        "octa"
-      ],
-      "task_tags": [
-        "segmentation",
-        "lora",
-        "fine-tuning"
-      ],
-      "disease_tags": [],
-      "doi": "10.48550/arXiv.2309.11758",
-      "code_url": "",
-      "notes": "Originally described as an in-submission conference work; keep it as a preprint until archival venue is verified."
-    },
-    {
-      "id": "retbench-placeholder",
-      "title": "RetBench: Which Ophthalmic Foundation Model Performs Best and Why?",
-      "short_title": "RetBench",
-      "venue": "Benchmark / overview placeholder",
-      "venue_type": "benchmark",
-      "year": 2025,
-      "priority": "A",
-      "highlight": "none",
-      "topics": [
-        "foundation-models"
-      ],
-      "link": "",
-      "summary": "A benchmark-style slot reserved for comparing ophthalmic foundation models; useful as an overview node even before all metadata is finalized.",
-      "model_figure_url_or_path": "assets/images/placeholder-benchmark.svg",
-      "modality": [
-        "fundus",
-        "oct"
-      ],
-      "task_tags": [
-        "benchmarking",
-        "evaluation"
-      ],
-      "disease_tags": [
-        "DR",
-        "AMD",
-        "glaucoma",
-        "multi-disease"
-      ],
-      "doi": "",
-      "code_url": "",
-      "notes": "Placeholder entry. Replace with final official source once benchmark metadata is confirmed."
+      "notes": "Nature article retained under the strict venue whitelist. Public figure stays placeholder until a clean paper-native architecture diagram can be promoted. Public figure currently uses a rendered paper page containing the architecture/overview figure."
     },
     {
       "id": "flair-2025",
@@ -385,7 +87,7 @@
       ],
       "doi": "10.1016/j.media.2024.103357",
       "code_url": "https://github.com/jusiro/FLAIR",
-      "notes": "From Medical Image Analysis (Elsevier). Added under foundation-models and visual-grounding per venue-first policy."
+      "notes": "Ophthalmic foundation-model paper from Medical Image Analysis. Keep as a core whitelist-compliant entry for both foundation-model and grounding tracks."
     },
     {
       "id": "oct-contrastive-metadata-2024",
@@ -416,7 +118,7 @@
       ],
       "doi": "10.1016/j.media.2024.103296",
       "code_url": "",
-      "notes": "Open-access article in Medical Image Analysis; directly relevant to ophthalmic pretraining."
+      "notes": "Whitelist-compliant ophthalmic Medical Image Analysis paper on OCT pretraining with metadata-aware contrastive positives."
     },
     {
       "id": "lvit-2024",
@@ -430,7 +132,7 @@
       "topics": [
         "visual-grounding"
       ],
-      "link": "https://pubmed.ncbi.nlm.nih.gov/37399157/",
+      "link": "https://doi.org/10.1109/TMI.2023.3291719",
       "summary": "Integrates language cues into vision transformers for medical segmentation; included as medically-close grounding reference when ophthalmic-specific grounding is sparse.",
       "model_figure_url_or_path": "assets/images/placeholder-model.svg",
       "modality": [
@@ -444,7 +146,7 @@
       "disease_tags": [],
       "doi": "10.1109/TMI.2023.3291719",
       "code_url": "",
-      "notes": "General medical (non-ophthalmic) but from allowed venue; helps ground the visual-grounding topic."
+      "notes": "Medically close TMI paper retained because whitelist-compliant ophthalmic grounding papers remain sparse."
     },
     {
       "id": "3dsam-adapter-2024",
@@ -473,7 +175,7 @@
       "disease_tags": [],
       "doi": "10.1016/j.media.2024.103324",
       "code_url": "",
-      "notes": "General medical PEFT reference from an allowed venue; ophthalmic PEFT remains sparse in listed venues."
+      "notes": "Medically close Medical Image Analysis PEFT reference retained under the whitelist while ophthalmic venue-listed adapter papers remain sparse."
     },
     {
       "id": "spa-sam-adapter-2026",
@@ -487,7 +189,7 @@
       "topics": [
         "peft"
       ],
-      "link": "https://pubmed.ncbi.nlm.nih.gov/40030852/",
+      "link": "https://doi.org/10.1109/JBHI.2025.3526174",
       "summary": "Introduces a spatial-prior adapter to adapt SAM efficiently for medical segmentation tasks, illustrating parameter-efficient fine-tuning strategies.",
       "model_figure_url_or_path": "assets/images/placeholder-model.svg",
       "modality": [
@@ -501,7 +203,7 @@
       "disease_tags": [],
       "doi": "10.1109/JBHI.2025.3526174",
       "code_url": "",
-      "notes": "General medical PEFT in JBHI (allowed venue)."
+      "notes": "Medically close JBHI PEFT paper retained under the whitelist as a current adapter reference."
     },
     {
       "id": "h2h-gcn-2021",
@@ -517,7 +219,7 @@
       ],
       "link": "https://openaccess.thecvf.com/content/CVPR2021/html/Dai_A_Hyperbolic-to-Hyperbolic_Graph_Convolutional_Network_CVPR_2021_paper.html",
       "summary": "Defines manifold-preserving hyperbolic graph convolution operating directly on hyperbolic manifolds, avoiding tangent-space distortion.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "model_figure_url_or_path": "assets/figures/h2h-gcn-2021-page2.png",
       "modality": [
         "general"
       ],
@@ -528,7 +230,7 @@
       "disease_tags": [],
       "doi": "",
       "code_url": "",
-      "notes": "General-method paper from an allowed top vision venue; relevant to hyperbolic topic."
+      "notes": "General-method hyperbolic paper from an allowed top vision venue; retained under the hyperbolic exception. Public figure currently uses a rendered paper page containing the architecture/overview figure."
     },
     {
       "id": "hyperbolic-hierarchical-margin-2023",
@@ -544,7 +246,7 @@
       ],
       "link": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/e17e11960843febbc2dd22d3c7d79144-Abstract-Conference.html",
       "summary": "Uses hyperbolic embeddings with hierarchical cosine margins to improve coarse-to-fine generalization.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "model_figure_url_or_path": "assets/figures/hyperbolic-hierarchical-margin-2023-page4.png",
       "modality": [
         "general"
       ],
@@ -555,7 +257,7 @@
       "disease_tags": [],
       "doi": "",
       "code_url": "",
-      "notes": "NeurIPS 2023 main track; general hyperbolic method."
+      "notes": "General-method NeurIPS paper retained under the hyperbolic exception. Public figure currently uses a rendered paper page containing the architecture/overview figure."
     },
     {
       "id": "h-gram-2023",
@@ -571,7 +273,7 @@
       ],
       "link": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/8b6a8b010e9a266aad40a024c5976d5c-Abstract-Conference.html",
       "summary": "Meta-learning approach enabling scalable hyperbolic GNNs for node classification/link prediction with few-shot transfer.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "model_figure_url_or_path": "assets/figures/h-gram-2023-page2.png",
       "modality": [
         "general"
       ],
@@ -583,7 +285,7 @@
       "disease_tags": [],
       "doi": "",
       "code_url": "",
-      "notes": "NeurIPS 2023; general-method hyperbolic paper."
+      "notes": "General-method NeurIPS paper retained under the hyperbolic exception. Public figure currently uses a rendered paper page containing the architecture/overview figure."
     },
     {
       "id": "hyperbolic-vae-2023",
@@ -599,7 +301,7 @@
       ],
       "link": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/01ecd39ca49ddecc5729ca996304781b-Abstract-Conference.html",
       "summary": "Variational autoencoder whose latent space is a Gaussian-manifold hyperbolic space; shows stability and strong performance.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "model_figure_url_or_path": "assets/figures/hyperbolic-vae-2023-page2.png",
       "modality": [
         "general"
       ],
@@ -610,7 +312,7 @@
       "disease_tags": [],
       "doi": "",
       "code_url": "https://github.com/ml-postech/GM-VAE",
-      "notes": "NeurIPS 2023; general-method hyperbolic paper."
+      "notes": "General-method NeurIPS paper retained under the hyperbolic exception. Public figure currently uses a rendered paper page containing the architecture/overview figure."
     },
     {
       "id": "coneheads-2023",
@@ -626,7 +328,7 @@
       ],
       "link": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/a17251f8d595179eef5e466b1f5f7a85-Abstract-Conference.html",
       "summary": "Replaces dot-product attention with hierarchy-aware hyperbolic cone attention; improves performance with fewer parameters.",
-      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "model_figure_url_or_path": "assets/figures/coneheads-2023-page2.png",
       "modality": [
         "general"
       ],
@@ -637,7 +339,7 @@
       "disease_tags": [],
       "doi": "",
       "code_url": "",
-      "notes": "NeurIPS 2023; general-method hyperbolic attention mechanism."
+      "notes": "General-method NeurIPS paper retained under the hyperbolic exception. Public figure currently uses a rendered paper page containing the architecture/overview figure."
     }
   ]
 }

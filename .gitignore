@@ -3,4 +3,7 @@
 .venv/
 library/pdfs/
 library/text/
+library/figures/
+library/.DS_Store
 data/paper-artifacts.json
+CODEX_*_TASK.txt

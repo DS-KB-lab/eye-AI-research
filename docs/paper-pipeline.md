@@ -1,30 +1,33 @@
 # Local paper pipeline
 
-This repository now includes a local-first paper pipeline.
+This repository includes a local-first paper pipeline for the strict public library.
 
 ## What it does
-- download PDFs into `library/pdfs/`
-- extract early-page text into `library/text/`
-- extract candidate images into `library/figures/<paper-id>/`
-- generate `data/paper-artifacts.json`
-- select a best-effort candidate model figure
+- downloads PDFs into `library/pdfs/`
+- extracts early-page text into `library/text/`
+- extracts candidate images into `library/figures/<paper-id>/`
+- generates `data/paper-artifacts.json` locally
+- lets you promote selected model figures into `assets/figures/`
+
+## Public vs local
+- **Public dataset**: `data/papers.json`
+- **Public figures**: `assets/figures/`
+- **Local-only artifacts**: PDFs, extracted text, raw figure candidates, and `data/paper-artifacts.json`
+
+The public site now follows a strict venue-first policy. Non-whitelisted papers should not stay in `data/papers.json`, even if they remain useful in a local watchlist.
 
 ## Environment
-Use the repo-local virtual environment:
-
 ```bash
 cd /Users/mortal/.openclaw/workspace/publish/eye-AI-research
 . .venv/bin/activate
 python scripts/paper_pipeline.py sync
 ```
 
-## Data files
+## Main inputs
 - `data/papers.json` — public site dataset
-- `data/paper-sources.json` — source URLs for download
-- `data/paper-artifacts.json` — generated local extraction artifacts
+- `data/paper-sources.json` — official source/page/PDF URLs for the public strict library
 
 ## Notes
-- arXiv sources are the easiest to automate.
-- some journal pages may not expose direct PDF links cleanly.
-- image extraction is best-effort; the largest image is not always the true model diagram.
-- the next step is to add a review pass that promotes the right image into the site intentionally.
+- some journal pages expose PDFs directly; others only expose article pages or DOI redirects
+- conference PDFs are usually the easiest to automate
+- the largest extracted image is not always the true architecture figure, so public promotion still needs review
