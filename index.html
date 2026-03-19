@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eye AI Research</title>
+  <meta name="description" content="A living review website for ophthalmic AI research across foundation models, visual grounding, PEFT, and hyperbolic methods.">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="index.html"><img src="assets/images/logo.svg" alt="Eye AI Research" width="34">Eye AI Research</a>
+      <a href="papers/index.html">Papers</a>
+      <a href="topics/foundation-models.html">Topics</a>
+      <a href="updates/index.html">Updates</a>
+      <a href="pages/research.html">Plan</a>
+      <a href="pages/about.html">About</a>
+      <span class="spacer"></span>
+      <button class="theme-btn" data-theme-toggle type="button">Theme</button>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="container hero">
+    <section class="hero-card">
+      <p class="small">Living review · continuously updated resource</p>
+      <h1>Ophthalmic AI research, organized for fast scanning and deeper study.</h1>
+      <p>This site tracks papers, methods, and emerging directions in ophthalmic AI, with an initial emphasis on foundation models and a planned expansion into visual grounding, PEFT, and hyperbolic representation learning.</p>
+      <div class="actions">
+        <a class="btn primary" href="papers/index.html">Explore papers</a>
+        <a class="btn" href="pages/research.html">Read research plan</a>
+      </div>
+      <p class="small">Last dataset refresh: <span data-last-updated>—</span></p>
+    </section>
+    <section class="hero-card">
+      <img src="assets/images/placeholder-model.svg" alt="Ophthalmic AI concept illustration">
+    </section>
+  </div>
+
+  <div class="container section">
+    <h2>Four core tracks</h2>
+    <div class="grid grid-2">
+      <div class="card"><div class="card-body"><h3>Ophthalmic foundation models</h3><p>The most mature and publication-rich track so far. This is the right place to start a first public dataset.</p></div></div>
+      <div class="card"><div class="card-body"><h3>Visual grounding & region-text alignment</h3><p>Still sparse in pure ophthalmology, so the collection strategy broadens to lesion localization, VQA, and medically grounded alignment work.</p></div></div>
+      <div class="card"><div class="card-body"><h3>Parameter-efficient fine-tuning</h3><p>Includes LoRA, adapters, prompt tuning, and low-resource adaptation paths for retinal and multimodal ophthalmic models.</p></div></div>
+      <div class="card"><div class="card-body"><h3>Hyperbolic methods</h3><p>A smaller direct-ophthalmic pool today, but promising as a method专题 for hierarchy-aware disease representations and transferable geometry-aware modeling.</p></div></div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <h2>Seed papers</h2>
+    <p class="small">A first public version with verifiable links and restrained claims. Figure placeholders will be replaced by paper-native diagrams or clean redraws.</p>
+    <div id="home-highlights" class="paper-grid js-data-error"></div>
+  </div>
+
+  <div class="container section notice">
+    The current site is publishable now, but still early. The next high-value step is to expand the dataset with more ophthalmic-native visual grounding, PEFT, and hyperbolic papers from the last five years.
+  </div>
+</main>
+<footer>
+  <div class="container">Built as a static GitHub Pages site for transparent versioning and easy automation.</div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

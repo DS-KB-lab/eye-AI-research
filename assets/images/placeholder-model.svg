@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Model figure placeholder</title>
+  <desc id="desc">Abstract ophthalmic AI placeholder figure.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07111f"/>
+      <stop offset="100%" stop-color="#17324f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)" rx="24"/>
+  <g opacity="0.18">
+    <circle cx="120" cy="90" r="72" fill="#3b82f6"/>
+    <circle cx="710" cy="360" r="92" fill="#06b6d4"/>
+  </g>
+  <g transform="translate(160 105)">
+    <path d="M0 120C70 10 250 10 320 120C250 230 70 230 0 120Z" fill="none" stroke="url(#accent)" stroke-width="10"/>
+    <circle cx="160" cy="120" r="56" fill="url(#accent)"/>
+    <circle cx="160" cy="120" r="24" fill="#07111f"/>
+    <rect x="410" y="20" width="150" height="72" rx="16" fill="#102235" stroke="#3b82f6"/>
+    <rect x="410" y="152" width="150" height="72" rx="16" fill="#102235" stroke="#06b6d4"/>
+    <path d="M320 120H410" stroke="#9ec5ff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M560 56L630 56" stroke="#9ec5ff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M560 188L630 188" stroke="#9ec5ff" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="36" y="48" fill="#e2e8f0" font-size="28" font-family="Inter, Arial, sans-serif" font-weight="700">Figure placeholder</text>
+  <text x="36" y="88" fill="#94a3b8" font-size="18" font-family="Inter, Arial, sans-serif">Replace with a paper-native architecture figure or a clean redraw.</text>
+</svg>

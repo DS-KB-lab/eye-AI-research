@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Benchmark placeholder</title>
+  <desc id="desc">Abstract benchmark placeholder figure.</desc>
+  <rect width="800" height="450" rx="24" fill="#091220"/>
+  <g transform="translate(70 70)">
+    <rect width="620" height="260" rx="20" fill="#111c2d" stroke="#294569"/>
+    <path d="M36 220H580" stroke="#36557d" stroke-width="4"/>
+    <path d="M36 220V30" stroke="#36557d" stroke-width="4"/>
+    <polyline points="60,198 160,150 260,170 360,108 460,128 560,74" fill="none" stroke="#3b82f6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="60,208 160,190 260,146 360,130 460,96 560,86" fill="none" stroke="#06b6d4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="38" y="48" fill="#e2e8f0" font-size="28" font-family="Inter, Arial, sans-serif" font-weight="700">Benchmark placeholder</text>
+  <text x="38" y="88" fill="#94a3b8" font-size="18" font-family="Inter, Arial, sans-serif">Use this until a benchmark overview chart or evaluation table is ready.</text>
+</svg>
