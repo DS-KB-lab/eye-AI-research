@@ -74,12 +74,14 @@ function renderPapersPage(data) {
   if (!root) return;
   const search = $('#search');
   const topic = $('#topic-filter');
+  const venue = $('#venue-filter');
   const modality = $('#modality-filter');
   const year = $('#year-filter');
   const priority = $('#priority-filter');
   const count = $('#results-count');
 
   topic.innerHTML += (data.meta.topics || []).map(t => `<option value="${t.id}">${t.label}</option>`).join('');
+  if (venue) venue.innerHTML += [...new Set(data.papers.map(p => p.venue).filter(Boolean))].sort().map(v => `<option value="${v}">${v}</option>`).join('');
   modality.innerHTML += unique(data.papers.map(p => p.modality || [])).sort().map(m => `<option value="${m}">${m}</option>`).join('');
   year.innerHTML += [...new Set(data.papers.map(p => p.year))].sort((a,b)=>b-a).map(y => `<option value="${y}">${y}</option>`).join('');
 
@@ -89,6 +91,7 @@ function renderPapersPage(data) {
       const hay = [p.title, p.short_title, p.summary, p.venue, ...(p.topics || []), ...(p.modality || []), ...(p.task_tags || []), ...(p.disease_tags || [])].join(' ').toLowerCase();
       if (q && !hay.includes(q)) return false;
       if (topic.value && !(p.topics || []).includes(topic.value)) return false;
+      if (venue && venue.value && p.venue !== venue.value) return false;
       if (modality.value && !(p.modality || []).includes(modality.value)) return false;
       if (year.value && String(p.year) !== year.value) return false;
       if (priority.value && p.priority !== priority.value) return false;
@@ -99,8 +102,8 @@ function renderPapersPage(data) {
     count.textContent = `${items.length} / ${data.papers.length} papers`;
   }
 
-  [search, topic, modality, year, priority].forEach(el => el.addEventListener('input', apply));
-  [topic, modality, year, priority].forEach(el => el.addEventListener('change', apply));
+  [search, topic, modality, year, priority, venue].filter(Boolean).forEach(el => el.addEventListener('input', apply));
+  [topic, modality, year, priority, venue].filter(Boolean).forEach(el => el.addEventListener('change', apply));
   apply();
 }
 
@@ -121,7 +124,7 @@ function renderUpdates(data) {
   root.innerHTML = `
     <div class="card">
       <h3>Automation-ready update log</h3>
-      <p>This page is prepared for future cron-based updates. A daily or weekly job can append newly verified papers, refreshed metadata, figure assets, and ranking notes.</p>
+      <p>This page is prepared for future cron-based updates. A daily or weekly job can search target venues, append verified papers, refresh metadata, and gradually replace placeholder figures with real model diagrams.</p>
       <ul>
         <li>Latest dataset refresh: <strong>${data.meta.generated_at.slice(0, 10)}</strong></li>
         <li>Current seed papers: <strong>${data.papers.length}</strong></li>
