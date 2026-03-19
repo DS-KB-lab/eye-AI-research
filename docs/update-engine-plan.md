@@ -15,6 +15,12 @@ Automatically discover, review, and enrich new ophthalmic AI papers.
 7. Collect or redraw core model figures
 8. Append updates to the site
 
+## Venue-first policy (Mar 19, 2026)
+- New papers are selected strictly from venues listed in `../venues-list.md`.
+- For ophthalmic topics (foundation-models, visual-grounding, PEFT), prefer ophthalmic-focused works within those venues; when ophthalmic papers are sparse, allow closely related medical-imaging works from the same venue list and label them as such.
+- Hyperbolic topic may include general-method papers from allowed CS venues (CVPR/ICCV/ECCV, ICLR/NeurIPS/ICML/AAAI, TPAMI/IJCV/TIP, etc.).
+- Source links prioritize official venue pages (CVF/IEEE/Elsevier/Nature/OpenReview), DOIs, or PubMed. Avoid relying solely on preprints when an archival venue exists.
+
 ## Target search sources
 - Nature / Nature family
 - IEEE TMI / JBHI / TBME / TPAMI / TIP / TMM

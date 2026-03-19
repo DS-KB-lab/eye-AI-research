@@ -1,0 +1,32 @@
+You are updating a public paper-sharing website repository at /Users/mortal/.openclaw/workspace/publish/eye-AI-research.
+
+Critical rules:
+1. Read and follow /Users/mortal/.openclaw/workspace/venues-list.md strictly.
+2. New papers must be searched and selected STRICTLY from venues listed in venues-list.md.
+3. Topic rules:
+   - foundation-models: ophthalmic / retinal / fundus / OCT / ophthalmology focused
+   - visual-grounding: ophthalmic-focused if possible; if sparse, still prefer ophthalmic and medically close work, but venue must be in venues-list.md
+   - peft: ophthalmic-focused adaptation / LoRA / adapter / prompt tuning / efficient adaptation
+   - hyperbolic: MAY be non-ophthalmic, but MUST still come from venues-list.md
+4. Prioritize the last 5 years.
+5. Downloadable/official paper links matter. Prefer official conference/journal pages, DOI pages, PubMed where appropriate, OpenReview/CVF/ACL Anthology/IEEE/Nature/Elsevier official pages.
+6. Do not fabricate certainty. If a venue or publication detail is unclear, do not add it as confirmed.
+
+Your goal in this run:
+A. Expand the library from 10 papers toward 20 papers.
+B. Only add papers that satisfy the rules above.
+C. Update data/papers.json with new entries.
+D. Update data/paper-sources.json with source/page/PDF URLs for the new entries when possible.
+E. Add a short progress note to docs/update-engine-plan.md describing the strict venue-first policy.
+F. Keep the website coherent as a paper-sharing site.
+
+Important:
+- Do not remove current papers yet unless clearly necessary.
+- But for newly added papers, enforce the strict venue-first policy.
+- Hyperbolic can be general-method papers from CVPR/ICCV/ECCV/ICLR/NeurIPS/ICML/AAAI/TPAMI/IJCV/etc. from venues-list.md.
+- Foundation/grounding/PEFT should remain as ophthalmic as possible.
+
+After editing files, print:
+1. Which papers were added
+2. Which venues they came from
+3. Any remaining gaps

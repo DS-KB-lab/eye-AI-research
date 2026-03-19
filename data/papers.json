@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-03-19T21:36:00Z",
+    "generated_at": "2026-03-19T21:52:26Z",
     "site_title": "Ophthalmic AI Paper Hub",
     "description": "A living paper-sharing hub for ophthalmic AI across foundation models, visual grounding, PEFT, and hyperbolic methods.",
     "topics": [
@@ -354,6 +354,290 @@
       "doi": "",
       "code_url": "",
       "notes": "Placeholder entry. Replace with final official source once benchmark metadata is confirmed."
+    },
+    {
+      "id": "flair-2025",
+      "title": "A Foundation Language-Image Model of the Retina (FLAIR): encoding expert knowledge in text supervision",
+      "short_title": "FLAIR",
+      "venue": "Medical Image Analysis",
+      "venue_type": "journal",
+      "year": 2025,
+      "priority": "S",
+      "highlight": "journal",
+      "topics": [
+        "foundation-models",
+        "visual-grounding"
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S1361841524002822",
+      "summary": "Vision-language foundation model for fundus imaging trained with expert text supervision; demonstrates strong zero-/few-shot transfer and domain robustness.",
+      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "modality": [
+        "fundus"
+      ],
+      "task_tags": [
+        "vision-language-model",
+        "zero-shot",
+        "few-shot",
+        "text-supervision"
+      ],
+      "disease_tags": [
+        "multi-disease"
+      ],
+      "doi": "10.1016/j.media.2024.103357",
+      "code_url": "https://github.com/jusiro/FLAIR",
+      "notes": "From Medical Image Analysis (Elsevier). Added under foundation-models and visual-grounding per venue-first policy."
+    },
+    {
+      "id": "oct-contrastive-metadata-2024",
+      "title": "Metadata-enhanced contrastive learning from retinal optical coherence tomography images",
+      "short_title": "OCT-CL+Metadata",
+      "venue": "Medical Image Analysis",
+      "venue_type": "journal",
+      "year": 2024,
+      "priority": "A",
+      "highlight": "journal",
+      "topics": [
+        "foundation-models"
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S1361841524002214",
+      "summary": "Uses patient/time/eye metadata to form better positives for contrastive pretraining on 170k+ OCT images; outperforms standard CL and a retinal foundation model on AMD-related tasks.",
+      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "modality": [
+        "oct"
+      ],
+      "task_tags": [
+        "self-supervised",
+        "contrastive",
+        "pretraining",
+        "longitudinal"
+      ],
+      "disease_tags": [
+        "AMD"
+      ],
+      "doi": "10.1016/j.media.2024.103296",
+      "code_url": "",
+      "notes": "Open-access article in Medical Image Analysis; directly relevant to ophthalmic pretraining."
+    },
+    {
+      "id": "lvit-2024",
+      "title": "LViT: Language Meets Vision Transformer in Medical Image Segmentation",
+      "short_title": "LViT",
+      "venue": "IEEE Transactions on Medical Imaging",
+      "venue_type": "journal",
+      "year": 2024,
+      "priority": "B",
+      "highlight": "journal",
+      "topics": [
+        "visual-grounding"
+      ],
+      "link": "https://pubmed.ncbi.nlm.nih.gov/37399157/",
+      "summary": "Integrates language cues into vision transformers for medical segmentation; included as medically-close grounding reference when ophthalmic-specific grounding is sparse.",
+      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "modality": [
+        "multimodal"
+      ],
+      "task_tags": [
+        "segmentation",
+        "vision-language",
+        "prompting"
+      ],
+      "disease_tags": [],
+      "doi": "10.1109/TMI.2023.3291719",
+      "code_url": "",
+      "notes": "General medical (non-ophthalmic) but from allowed venue; helps ground the visual-grounding topic."
+    },
+    {
+      "id": "3dsam-adapter-2024",
+      "title": "3DSAM-adapter: Holistic adaptation of SAM from 2D to 3D for promptable tumor segmentation",
+      "short_title": "3DSAM-adapter",
+      "venue": "Medical Image Analysis",
+      "venue_type": "journal",
+      "year": 2024,
+      "priority": "A",
+      "highlight": "journal",
+      "topics": [
+        "peft"
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S1361841524002494",
+      "summary": "Parameter-efficient adapters to adapt Segment Anything from 2D natural images to 3D medical volumes while reusing most pretrained weights.",
+      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "modality": [
+        "multimodal"
+      ],
+      "task_tags": [
+        "segmentation",
+        "adapter",
+        "promptable",
+        "parameter-efficient"
+      ],
+      "disease_tags": [],
+      "doi": "10.1016/j.media.2024.103324",
+      "code_url": "",
+      "notes": "General medical PEFT reference from an allowed venue; ophthalmic PEFT remains sparse in listed venues."
+    },
+    {
+      "id": "spa-sam-adapter-2026",
+      "title": "SPA: Leveraging the SAM With Spatial Priors Adapter for Enhanced Medical Image Segmentation",
+      "short_title": "SPA Adapter",
+      "venue": "IEEE Journal of Biomedical and Health Informatics",
+      "venue_type": "journal",
+      "year": 2026,
+      "priority": "B",
+      "highlight": "journal",
+      "topics": [
+        "peft"
+      ],
+      "link": "https://pubmed.ncbi.nlm.nih.gov/40030852/",
+      "summary": "Introduces a spatial-prior adapter to adapt SAM efficiently for medical segmentation tasks, illustrating parameter-efficient fine-tuning strategies.",
+      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "modality": [
+        "multimodal"
+      ],
+      "task_tags": [
+        "adapter",
+        "prompting",
+        "segmentation"
+      ],
+      "disease_tags": [],
+      "doi": "10.1109/JBHI.2025.3526174",
+      "code_url": "",
+      "notes": "General medical PEFT in JBHI (allowed venue)."
+    },
+    {
+      "id": "h2h-gcn-2021",
+      "title": "A Hyperbolic-to-Hyperbolic Graph Convolutional Network",
+      "short_title": "H2H-GCN",
+      "venue": "CVPR",
+      "venue_type": "conference",
+      "year": 2021,
+      "priority": "A",
+      "highlight": "conference",
+      "topics": [
+        "hyperbolic"
+      ],
+      "link": "https://openaccess.thecvf.com/content/CVPR2021/html/Dai_A_Hyperbolic-to-Hyperbolic_Graph_Convolutional_Network_CVPR_2021_paper.html",
+      "summary": "Defines manifold-preserving hyperbolic graph convolution operating directly on hyperbolic manifolds, avoiding tangent-space distortion.",
+      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "modality": [
+        "general"
+      ],
+      "task_tags": [
+        "graph-learning",
+        "hyperbolic-geometry"
+      ],
+      "disease_tags": [],
+      "doi": "",
+      "code_url": "",
+      "notes": "General-method paper from an allowed top vision venue; relevant to hyperbolic topic."
+    },
+    {
+      "id": "hyperbolic-hierarchical-margin-2023",
+      "title": "Hyperbolic Space with Hierarchical Margin Boosts Fine-Grained Learning from Coarse Labels",
+      "short_title": "PE-HCM",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "year": 2023,
+      "priority": "B",
+      "highlight": "conference",
+      "topics": [
+        "hyperbolic"
+      ],
+      "link": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/e17e11960843febbc2dd22d3c7d79144-Abstract-Conference.html",
+      "summary": "Uses hyperbolic embeddings with hierarchical cosine margins to improve coarse-to-fine generalization.",
+      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "modality": [
+        "general"
+      ],
+      "task_tags": [
+        "representation-learning",
+        "hyperbolic-geometry"
+      ],
+      "disease_tags": [],
+      "doi": "",
+      "code_url": "",
+      "notes": "NeurIPS 2023 main track; general hyperbolic method."
+    },
+    {
+      "id": "h-gram-2023",
+      "title": "Hyperbolic Graph Neural Networks at Scale: A Meta Learning Approach",
+      "short_title": "H-GRAM",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "year": 2023,
+      "priority": "B",
+      "highlight": "conference",
+      "topics": [
+        "hyperbolic"
+      ],
+      "link": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/8b6a8b010e9a266aad40a024c5976d5c-Abstract-Conference.html",
+      "summary": "Meta-learning approach enabling scalable hyperbolic GNNs for node classification/link prediction with few-shot transfer.",
+      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "modality": [
+        "general"
+      ],
+      "task_tags": [
+        "graph-learning",
+        "meta-learning",
+        "hyperbolic-geometry"
+      ],
+      "disease_tags": [],
+      "doi": "",
+      "code_url": "",
+      "notes": "NeurIPS 2023; general-method hyperbolic paper."
+    },
+    {
+      "id": "hyperbolic-vae-2023",
+      "title": "Hyperbolic VAE via Latent Gaussian Distributions",
+      "short_title": "Hyperbolic VAE",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "year": 2023,
+      "priority": "B",
+      "highlight": "conference",
+      "topics": [
+        "hyperbolic"
+      ],
+      "link": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/01ecd39ca49ddecc5729ca996304781b-Abstract-Conference.html",
+      "summary": "Variational autoencoder whose latent space is a Gaussian-manifold hyperbolic space; shows stability and strong performance.",
+      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "modality": [
+        "general"
+      ],
+      "task_tags": [
+        "generative-modeling",
+        "hyperbolic-geometry"
+      ],
+      "disease_tags": [],
+      "doi": "",
+      "code_url": "https://github.com/ml-postech/GM-VAE",
+      "notes": "NeurIPS 2023; general-method hyperbolic paper."
+    },
+    {
+      "id": "coneheads-2023",
+      "title": "Coneheads: Hierarchy Aware Attention",
+      "short_title": "Coneheads",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "year": 2023,
+      "priority": "B",
+      "highlight": "conference",
+      "topics": [
+        "hyperbolic"
+      ],
+      "link": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/a17251f8d595179eef5e466b1f5f7a85-Abstract-Conference.html",
+      "summary": "Replaces dot-product attention with hierarchy-aware hyperbolic cone attention; improves performance with fewer parameters.",
+      "model_figure_url_or_path": "assets/images/placeholder-model.svg",
+      "modality": [
+        "general"
+      ],
+      "task_tags": [
+        "attention",
+        "hyperbolic-geometry"
+      ],
+      "disease_tags": [],
+      "doi": "",
+      "code_url": "",
+      "notes": "NeurIPS 2023; general-method hyperbolic attention mechanism."
     }
   ]
 }

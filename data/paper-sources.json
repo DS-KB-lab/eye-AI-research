@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-03-19T21:40:00Z",
+  "updated_at": "2026-03-19T21:52:26Z",
   "papers": [
     {
       "id": "retfound-2023",
@@ -55,6 +55,66 @@
       "page_url": "https://arxiv.org/abs/2309.11758",
       "pdf_url": "https://arxiv.org/pdf/2309.11758.pdf",
       "source_type": "arxiv"
+    },
+    {
+      "id": "flair-2025",
+      "page_url": "https://www.sciencedirect.com/science/article/pii/S1361841524002822",
+      "pdf_url": "",
+      "source_type": "journal"
+    },
+    {
+      "id": "oct-contrastive-metadata-2024",
+      "page_url": "https://www.sciencedirect.com/science/article/pii/S1361841524002214",
+      "pdf_url": "",
+      "source_type": "journal"
+    },
+    {
+      "id": "lvit-2024",
+      "page_url": "https://pubmed.ncbi.nlm.nih.gov/37399157/",
+      "pdf_url": "",
+      "source_type": "pubmed"
+    },
+    {
+      "id": "3dsam-adapter-2024",
+      "page_url": "https://www.sciencedirect.com/science/article/pii/S1361841524002494",
+      "pdf_url": "",
+      "source_type": "journal"
+    },
+    {
+      "id": "spa-sam-adapter-2026",
+      "page_url": "https://pubmed.ncbi.nlm.nih.gov/40030852/",
+      "pdf_url": "",
+      "source_type": "pubmed"
+    },
+    {
+      "id": "h2h-gcn-2021",
+      "page_url": "https://openaccess.thecvf.com/content/CVPR2021/html/Dai_A_Hyperbolic-to-Hyperbolic_Graph_Convolutional_Network_CVPR_2021_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2021/papers/Dai_A_Hyperbolic-to-Hyperbolic_Graph_Convolutional_Network_CVPR_2021_paper.pdf",
+      "source_type": "conference"
+    },
+    {
+      "id": "hyperbolic-hierarchical-margin-2023",
+      "page_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/e17e11960843febbc2dd22d3c7d79144-Abstract-Conference.html",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/e17e11960843febbc2dd22d3c7d79144-Paper-Conference.pdf",
+      "source_type": "conference"
+    },
+    {
+      "id": "h-gram-2023",
+      "page_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/8b6a8b010e9a266aad40a024c5976d5c-Abstract-Conference.html",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/8b6a8b010e9a266aad40a024c5976d5c-Paper-Conference.pdf",
+      "source_type": "conference"
+    },
+    {
+      "id": "hyperbolic-vae-2023",
+      "page_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/01ecd39ca49ddecc5729ca996304781b-Abstract-Conference.html",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/01ecd39ca49ddecc5729ca996304781b-Paper-Conference.pdf",
+      "source_type": "conference"
+    },
+    {
+      "id": "coneheads-2023",
+      "page_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/a17251f8d595179eef5e466b1f5f7a85-Abstract-Conference.html",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/a17251f8d595179eef5e466b1f5f7a85-Paper-Conference.pdf",
+      "source_type": "conference"
     }
   ]
 }
